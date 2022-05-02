@@ -1,0 +1,55 @@
+Instructions:
+    FROM:
+        Name: "FROM"
+        Description: "From"        
+    LABEL:
+        Name: "LABEL"
+        Description: "label"
+	ENV:
+        Name: "ENV"
+        Description: "Env"
+	RUN:
+        Name: "RUN"
+        Description: "Run"
+	COPY:
+        Name: "COPY"
+        Description: "Copy"
+	ADD:
+        Name: "ADD"
+        Description: "Add"
+	CMD:
+        Name: "CMD"
+        Description: "Cmd"
+	WORKDIR:
+        Name: "WORKDIR"
+        Description: "Workdir"
+	ARG:
+        Name: "ARG"
+        Description: "Arg"
+	ENTYPOINT:
+        Name: "ENTRYPOINT"
+        Description: "Entrypoint"
+	EXPOSE:
+        Name: "EXPOSE"
+        Description: "Expose"
+	VOLUME:
+        Name: "VOLUME"
+        Description: "Volume"
+	MAINTAINER:
+        Name: "MAINTAINER"
+        Description: "Maintainer"
+	USER:
+        Name: "USER"
+        Description: "User"
+	ONBUILD:
+        Name: "ONBUILD"
+        Description: "Onbuild"
+	STOPSIGNAL:
+        Name: "STOPSIGNAL"
+    Description: "Stopsignal"
+	    HELATHCHECK:
+    Name: "HELATHCHECK"
+        Description: "Helathcheck"
+	SHELL:
+        Name: "SHELL"
+        Description: "Shell"
