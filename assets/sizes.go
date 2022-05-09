@@ -1,6 +1,6 @@
 package assets
 
 const (
-	WindowWidth = 500
+	WindowWidth = 600
 	WindowHeight = 500
 )

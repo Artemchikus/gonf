@@ -1,55 +1,88 @@
-Instructions:
-    FROM:
-        Name: "FROM"
-        Description: "From"        
-    LABEL:
-        Name: "LABEL"
-        Description: "label"
-	ENV:
-        Name: "ENV"
-        Description: "Env"
-	RUN:
-        Name: "RUN"
-        Description: "Run"
-	COPY:
-        Name: "COPY"
-        Description: "Copy"
-	ADD:
-        Name: "ADD"
-        Description: "Add"
-	CMD:
-        Name: "CMD"
-        Description: "Cmd"
-	WORKDIR:
-        Name: "WORKDIR"
-        Description: "Workdir"
-	ARG:
-        Name: "ARG"
-        Description: "Arg"
-	ENTYPOINT:
-        Name: "ENTRYPOINT"
-        Description: "Entrypoint"
-	EXPOSE:
-        Name: "EXPOSE"
-        Description: "Expose"
-	VOLUME:
-        Name: "VOLUME"
-        Description: "Volume"
-	MAINTAINER:
-        Name: "MAINTAINER"
-        Description: "Maintainer"
-	USER:
-        Name: "USER"
-        Description: "User"
-	ONBUILD:
-        Name: "ONBUILD"
-        Description: "Onbuild"
-	STOPSIGNAL:
-        Name: "STOPSIGNAL"
+instructions:
+  -
+    Name: "FILENAME"
+    Description: "Dockerfile"
+    PlaceHolder: "Dockerfile.yaml"
+    HintText: "Обязательное поле"
+  -
+    Name: "FROM"
+    Description: "Задает базовый образ для последующих инструкций. Можно использовать любой работающий образ, проще всего начать с загрузки образа из публичного репозитория."
+    PlaceHolder: "<образ>"
+    HintText: "Обязательное поле"
+  -
+    Name: "LABEL"
+    Description: "label"
+    IsMany: true
+    PlaceHolder: "<ключ>=<значение>"
+  -
+    Name: "ENV"
+    Description: "Env"
+    IsMany: true
+    PlaceHolder: "<ключ>=<значение>"
+  -
+    Name: "RUN"
+    Description: "Run"
+    IsMany: true
+    PlaceHolder: "<команда>"
+  -
+    Name: "COPY"
+    Description: "Copy"
+    IsMany: true
+    PlaceHolder: "<откуда> <куда>"
+  -
+    Name: "ADD"
+    Description: "Add"
+    IsMany: true
+    PlaceHolder: "<откуда> <куда>"
+  -
+    Name: "CMD"
+    Description: "Cmd"
+    PlaceHolder: "[<исполняемый файл>, <параметры>]"
+  -
+    Name: "WORKDIR"
+    Description: "Workdir"
+    IsMany: true
+    PlaceHolder: "/<рабочий каталог>"
+  -
+    Name: "ARG"
+    Description: "Arg"
+    IsMany: true
+    PlaceHolder: "<имя>=<значение по умолчанию>"
+  -
+    Name: "ENTRYPOINT"
+    Description: "Entrypoint"
+    PlaceHolder: "[<исполняемый файл>, <параметры>]"
+  -
+    Name: "EXPOSE"
+    Description: "Expose"
+    PlaceHolder: "<порт>"
+  -
+    Name: "VOLUME"
+    Description: "Volume"
+    PlaceHolder: "/<точка монтирования>"
+  -
+    Name: "MAINTAINER"
+    Description: "Maintainer"
+    PlaceHolder: "<имя>"
+  -
+    Name: "USER"
+    Description: "User"
+    PlaceHolder: "<имя>"
+  -
+    Name: "ONBUILD"
+    Description: "Onbuild"
+    IsMany: true
+    PlaceHolder: "<инструкция>"
+  -
+    Name: "STOPSIGNAL"
     Description: "Stopsignal"
-	    HELATHCHECK:
+    PlaceHolder: "<сигнал>"
+  -
     Name: "HELATHCHECK"
-        Description: "Helathcheck"
-	SHELL:
-        Name: "SHELL"
-        Description: "Shell"
+    Description: "Helathcheck"
+    PlaceHolder: "[опции] <CMD команда>"
+  -
+    Name: "SHELL"
+    Description: "Shell"
+    IsMany: true
+    PlaceHolder: "[<исполняемый файл>, <параметры>]"

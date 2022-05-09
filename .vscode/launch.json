@@ -13,6 +13,9 @@
             "args": [
                 "-buildvcs=false",
             ],
+            "env":{
+                "CONFIGPATH": "C:\\Users\\filar\\go\\goProjects\\gonf\\configs"
+            }
         }
     ]
 }

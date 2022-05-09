@@ -1,7 +1,7 @@
 package kubernetes
 
 import (
-	"gonf/internal/kubernetes/resources/models"
+	"gonf/internal/kubernetes/models"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
