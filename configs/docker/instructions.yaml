@@ -1,10 +1,5 @@
 instructions:
   -
-    Name: "FILENAME"
-    Description: "Dockerfile"
-    PlaceHolder: "Dockerfile.yaml"
-    HintText: "Обязательное поле"
-  -
     Name: "FROM"
     Description: "Задает базовый образ для последующих инструкций. Можно использовать любой работающий образ, проще всего начать с загрузки образа из публичного репозитория."
     PlaceHolder: "<образ>"
