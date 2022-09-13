@@ -1,0 +1,54 @@
+Fields:
+  -
+    Name: "annotations"
+    Type: "object"
+  -
+    Name: "clusterName"
+    Type: "string"
+  -
+    Name: "creationTimestamp"
+    Type: "Time"
+  -
+    Name: "deletionGracePeriodSeconds"
+    Type: "integer"
+  -
+    Name: "deletionTimestamp"
+    Type: "Time"
+  -
+    Name: "finalizers"
+    Type: "string array"
+    PatchStrategy: "merge"
+  -
+    Name: "generateName"
+    Type: "string"
+  -
+    Name: "generation"
+    Type: "integer"
+  -
+    Name: "labels"
+    Type: "object"
+  -
+    Name: "managedFields"
+    Type: "ManagedFieldsEntry array"
+    # ссылка на managedFiledEntry файл
+  -
+    Name: "name"
+    Type: "string"
+  -
+    Name: "namespace"
+    Type: "string"
+  -
+    Name: "ownerReferences"
+    Type: "OwnerReference array"
+    PatchStrategy: "merge"
+    PatchMergeKey: "uid"
+    # ссылка на ownerReference файл
+  -
+    Name: "resourceVersion"
+    Type: "string"
+  -
+    Name: "selfLink"
+    Type: "string"
+  -
+    Name: "uid"
+    Type: "string"

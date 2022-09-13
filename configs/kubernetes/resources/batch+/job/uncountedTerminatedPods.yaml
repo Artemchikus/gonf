@@ -1,0 +1,7 @@
+Fields:
+  -
+    Name: "failed"
+    Type: "string array"
+  -
+    Name: "succeeded"
+    Type: "string array"

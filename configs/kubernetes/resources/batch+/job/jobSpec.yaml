@@ -1,0 +1,33 @@
+Fields:
+  -
+    Name: "activeDeadlineSeconds"
+    Type: "integer"
+  -
+    Name: "backoffLimit"
+    Type: "integer"
+  -
+    Name: "completionMode"
+    Type: "string"
+  -
+    Name: "completions"
+    Type: "integer"
+  -
+    Name: "manualSelector"
+    Type: "boolean"
+  -
+    Name: "parallelism"
+    Type: "integer"
+  -
+    Name: "selector"
+    Type: "LabelSelector"
+    # ссылка на fields/meta/labelSelector файл
+  -
+    Name: "suspend"
+    Type: "boolean"
+  -
+    Name: "template"
+    Type: "PodTemplateSpec"
+    # ссылка на fields/core/podTemplateSpec файл
+  -
+    Name: "ttlSecondsAfterFinished"
+    Type: "integer"

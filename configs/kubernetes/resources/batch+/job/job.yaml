@@ -1,0 +1,19 @@
+Fields:
+  -
+    Name: "apiVersion"
+    Type: "string"
+  -
+    Name: "kind"
+    Type: "string"
+  -
+    Name: "metadata"
+    Type: "ObjectMeta"
+    # ссылка на fields/meta/objectMeta файл
+  -
+    Name: "spec"
+    Type: "JobSpec"
+    # ссылка на jobSpec файл
+  -
+    Name: "status"
+    Type: "JobStatus"
+    # ссылка на jobStatus файл

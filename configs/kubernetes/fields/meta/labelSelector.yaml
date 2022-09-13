@@ -1,0 +1,8 @@
+Fields:
+  -
+    Name: "matchExpressions"
+    Type: "LabelSelectorRequirement array"
+    # ссылка на labelSelectorRequirement файл
+  -
+    Name: "matchLabels"
+    Type: "object"

@@ -1,0 +1,11 @@
+Fields:
+  -
+    Name: "active"
+    Type: "ObjectReference array"
+    # ссылка на fields/core/ownerReference файл
+  -
+    Name: "lastScheduleTime"
+    Type: "Time"
+  -
+    Name: "lastSuccessfulTime"
+    Type: "Time"

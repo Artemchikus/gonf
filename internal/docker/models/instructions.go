@@ -1,7 +1,7 @@
 package models
 
 type Instructions struct {
-	InstructMass []*Instruction `yaml:"instructions"`
+	InstructMass []*Instruction `yaml:"Instructions"`
 }
 
 type Instruction struct {

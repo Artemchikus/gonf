@@ -1,0 +1,19 @@
+Fields:
+  -
+    Name: "apiVersion"
+    Type: "string"
+  -
+    Name: "kind"
+    Type: "sting"
+  -
+    Name: "metadata"
+    Type: "ObjectMeta"
+    # ссылка на fields/meta/objectMeta файл
+  -
+    Name: "spec"
+    Type: "CronJobSpec"
+    # ссылка на cronJobSpec файл
+  -
+    Name: "status"
+    Type: "CronJobStatus"
+    # ссылка на cronJobStatus файл

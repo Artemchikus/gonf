@@ -1,0 +1,22 @@
+Fields:
+  -
+    Name: "apiVersion"
+    Type: "string"
+  -
+    Name: "fieldPath"
+    Type: "string"
+  -
+    Name: "kind"
+    Type: "string"
+  -
+    Name: "name"
+    Type: "string"
+  -
+    Name: "namespace"
+    Type: "string"
+  -
+    Name: "resourceVersion"
+    Type: "string"
+  -
+    Name: "uid"
+    Type: "string"

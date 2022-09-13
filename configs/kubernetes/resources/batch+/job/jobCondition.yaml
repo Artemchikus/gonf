@@ -1,0 +1,19 @@
+Fields:
+  -
+    Name: "lastProbeTime"
+    Type: "Time"
+  -
+    Name: "lastTransitionTime"
+    Type: "Time"
+  -
+    Name: "message"
+    Type: "string"
+  -
+    Name: "reason"
+    Type: "string"
+  -
+    Name: "status"
+    Type: "string"
+  -
+    Name: "type"
+    Type: "string"

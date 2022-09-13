@@ -1,0 +1,53 @@
+Samples:
+  -
+    Name: "БАЗА"
+    Description: "Самый базовый шаблон"
+    InstructionNames: 
+      -
+        "FROM"
+      -
+        "RUN"
+      -
+        "WORKDIR"
+      -
+        "COPY"
+      -
+        "CMD"
+  -
+    Name: "ВСЕ"
+    Description: "Все инструкции подряд"
+    InstructionNames: 
+      -
+        "FROM"
+      -
+        "LABEL"
+      -
+        "ENV"
+      -
+        "RUN"
+      -
+        "COPY"
+      -
+        "ADD"
+      -
+        "CMD"
+      -
+        "WORKDIR"
+      -
+        "ARG"
+      -
+        "ENTRYPOINT"
+      -
+        "EXPOSE"
+      -
+        "VOLUME"
+      -
+        "USER"
+      -
+        "ONBUILD"
+      -
+        "STOPSIGNAL"
+      -
+        "HELATHCHECK"
+      -
+        "SHELL"

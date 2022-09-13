@@ -1,0 +1,32 @@
+Fields:
+  -
+    Name: "active"
+    Type: "integer"
+  -
+    Name: "completedIndexes"
+    Type: "string"
+  -
+    Name: "completionTime"
+    Type: "Time"
+  -
+    Name: "conditions"
+    Type: "JobCondition array"
+    PatchStrategy: "merge"
+    PatchMergeKey: "type"
+    # ссылка на jobCondition файл
+  -
+    Name: "failed"
+    Type: "integer"
+  -
+    Name: "ready"
+    Type: "integer"
+  -
+    Name: "startTime"
+    Type: "Time"
+  -
+    Name: "succeeded"
+    Type: "integer"
+  -
+    Name: "uncountedTerminatedPods"
+    Type: "UncountedTerminatedPods"
+    # ссылка на uncountedTerminatedPods файл

@@ -20,8 +20,14 @@ func main() {
 
 	res, _ := fyne.LoadResourceFromPath("assets/icon.png")
 	w.SetIcon(res)
+	SetMainPage(w)
+}
 
+func SetMainPage(w fyne.Window) {
 	hello := widget.NewLabel("Создание файлов конфигурации")
+	hello.Alignment = fyne.TextAlignCenter
+	hello.TextStyle = fyne.TextStyle{Bold: true}
+
 	w.SetContent(container.NewVBox(
 		hello,
 		widget.NewButton("Dockerfile", func() {

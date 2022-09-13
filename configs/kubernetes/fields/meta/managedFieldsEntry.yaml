@@ -1,0 +1,17 @@
+Fields:
+  -
+    Name: "apiVersion"
+  -
+    Name: "fieldsType"
+  -
+    Name: "fieldsV1"
+    Type: "FieldsV1"
+  -
+    Name: "manager"
+  -
+    Name: "operation"
+  -
+    Name: "subresource"
+  -
+    Name: "time"
+    Type: "Time"

@@ -1,0 +1,19 @@
+Fields:
+  -
+    Name: "apiVersion"
+    Type: "string"
+  -
+    Name: "blockOwnerDeletion"
+    Type: "boolean"
+  -
+    Name: "controller"
+    Type: "boolean"
+  -
+    Name: "kind"
+    Type: "string"
+  -
+    Name: "name"
+    Type: "string"
+  -
+    Name: "uid"
+    Type: "string"

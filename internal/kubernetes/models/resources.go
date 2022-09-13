@@ -1,21 +1,20 @@
 package models
 
-import "fyne.io/fyne/v2"
-
 type Resources struct {
-	Pod                     fyne.CanvasObject
-	Service                 fyne.CanvasObject
-	Node                    fyne.CanvasObject
-	ConfigMap               fyne.CanvasObject
-	ReplicaSet              fyne.CanvasObject
-	ReplicationController   fyne.CanvasObject
-	Deployment              fyne.CanvasObject
-	PersistenVolume         fyne.CanvasObject
-	Namespace               fyne.CanvasObject
-	Role                    fyne.CanvasObject
-	HorizontalPodAutoscaler fyne.CanvasObject
-	LimitRange              fyne.CanvasObject
-	ResourceQuota           fyne.CanvasObject
-	StorageClass            fyne.CanvasObject
-	Secret                  fyne.CanvasObject
+	ResourceMass []*Resource `yaml:"Resources"`
+}
+
+type Resource struct {
+	Name        string   `yaml:"Name"`
+	Description string   `yaml:"Description"`
+	Fields      []*Field `yaml:"Fields"`
+}
+
+type Field struct {
+	Name          string   `yaml:"Name"`
+	Description   string   `yaml:"Description"`
+	Type          string   `yaml:"Type"`
+	PatchStrategy string   `yaml:"PatchStrategy"`
+	PatchMergeKey string   `yaml:"PatchMergeKey"`
+	Fields        []*Field `yaml:"Fields"`
 }

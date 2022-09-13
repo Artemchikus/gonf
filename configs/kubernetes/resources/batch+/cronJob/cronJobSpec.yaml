@@ -1,0 +1,26 @@
+Fields:
+  -
+    Name: "concurrencyPolicy"
+    Type: "string"
+  -
+    Name: "failedJobsHistoryLimit"
+    Type: "integer"
+  -
+    Name: "jobTemplate"
+    Type: "JobTemplateSpec"
+    # ссылка на jobTemplateSpec файл
+  -
+    Name: "schedule"
+    Type: "string"
+  -
+    Name: "startingDeadlineSeconds"
+    Type: "integer"
+  -
+    Name: "successfulJobsHistoryLimit"
+    Type: "integer"
+  -
+    Name: "suspend"
+    Type: "boolean"
+  -
+    Name: "timeZone"
+    Type: "string"

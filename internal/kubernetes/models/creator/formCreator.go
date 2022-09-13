@@ -10,12 +10,12 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-type creator struct {
+type formCreator struct {
 	window *fyne.Window
 	form   *widget.Form
 }
 
-func (c *creator) CreateNewFromItem(instruction *models.Instruction) *widget.FormItem {
+func (c *formCreator) CreateNewFromItem(instruction *models.Instruction) *widget.FormItem {
 	entry := widget.NewEntry()
 	entry.PlaceHolder = instruction.PlaceHolder
 
@@ -28,9 +28,10 @@ func (c *creator) CreateNewFromItem(instruction *models.Instruction) *widget.For
 
 		label.Wrapping = fyne.TextWrapWord
 
-		con1 := container.NewHScroll(label)
+		con := container.NewVScroll(label)
+		con.SetMinSize(fyne.Size{Width: c.form.Size().Width * 0.85})
 
-		info = dialog.NewCustom(instruction.Name, "OK", con1, *c.window)
+		info = dialog.NewCustom(instruction.Name, "OK", con, *c.window)
 
 		askButtom := widget.NewButtonWithIcon("", theme.QuestionIcon(), func() {
 			info.Show()
@@ -67,7 +68,7 @@ func (c *creator) CreateNewFromItem(instruction *models.Instruction) *widget.For
 	return formItem
 }
 
-func (c *creator) AddSameFormItem(instruction models.Instruction) {
+func (c *formCreator) AddSameFormItem(instruction models.Instruction) {
 	for index := len(c.form.Items) - 1; index >= 0; index-- {
 		if c.form.Items[index].Text == instruction.Name {
 			instruction.IsAdded = true
@@ -87,7 +88,7 @@ func (c *creator) AddSameFormItem(instruction models.Instruction) {
 	}
 }
 
-func (c *creator) DelFormItem(formItem *widget.FormItem) {
+func (c *formCreator) DelFormItem(formItem *widget.FormItem) {
 	for index, item := range c.form.Items {
 		if item == formItem {
 			oldItems := c.form.Items[index+1:]
@@ -100,8 +101,8 @@ func (c *creator) DelFormItem(formItem *widget.FormItem) {
 	}
 }
 
-func New(window *fyne.Window, form *widget.Form) *creator {
-	return &creator{
+func New(window *fyne.Window, form *widget.Form) *formCreator {
+	return &formCreator{
 		window: window,
 		form:   form,
 	}

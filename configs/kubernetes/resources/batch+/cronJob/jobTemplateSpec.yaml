@@ -1,0 +1,9 @@
+Fields:
+  -
+    Name: "metadata"
+    Type: "ObjectMeta"
+    # ссылка на fields/meta/objectMeta файл
+  -
+    Name: "spec"
+    Type: "JobSpec"
+    # ссылка на job/jobSpec файл

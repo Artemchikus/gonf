@@ -1,0 +1,12 @@
+Fields:
+  -
+    Name: "key"
+    Type: "string"
+    PatchStrategy: "merge"
+    PatchMergeKey: "key"
+  -
+    Name: "operator"
+    Type: "string"
+  -
+    Name: "values"
+    Type: "string array"
